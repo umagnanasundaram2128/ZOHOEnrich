@@ -26,13 +26,13 @@ int main()
             else
             {
                 if (right==order)
-				{
-		            right=0;
-				}
+		{
+	            right=0;
+		}
                 if (up==-1)
-				{
+		{
                     up=order-1;
-				}
+		}
             }
             if (array[up][right])
             {
