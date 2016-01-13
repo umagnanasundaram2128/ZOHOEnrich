@@ -25,7 +25,8 @@ int main()
                }
             index=index<<1;
         }
-        printf("\n");
+        printf("\n")
+        ;
     }
     free(array)
 	return 0;
