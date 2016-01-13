@@ -7,7 +7,7 @@ int main()
 	for(i=0;i<12;i++)
 	{
 		printf("%c",wish[i]);
-		sleep(1000);
+		usleep(1000);
 	}
 	return 0;
 }
