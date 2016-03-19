@@ -1,0 +1,37 @@
+#include<stdio.h>
+void oddEven(int a[],int n,int ev[],int od[],int *l,int *m)
+{
+	int i;
+	for(i=0;i<n;i++)
+	{
+		if(a[i]%2==0)
+		{
+			ev[*l]=a[i];
+			(*l)++;
+		}
+		else
+		{
+			od[*m]=a[i];
+			(*m)++;
+		}
+	}
+}
+
+void main()
+{
+	int a[]={1,2,3,4,5},n=5;
+	int ev[10],od[10],l=0,m=0;
+	int i;
+	
+	oddEven(a,n,ev,od,&l,&m);
+	printf("even array\n");
+	for(i=0;i<l;i++)
+	{
+		printf("%d\n",ev[i]);	
+	}
+	printf("odd array\n");
+	for(i=0;i<m;i++)
+	{
+		printf("%d\n",od[i]);	
+	}
+}
